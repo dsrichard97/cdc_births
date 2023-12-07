@@ -1,6 +1,6 @@
 # CDC Births Data Summary
 
-Welcome to my GitHub repository, where I showcase my skills and projects in data analysis.
+This dataset, sourced from the Centers for Disease Control and Prevention (CDC), presents an extensive collection of natality statistics for live births within the United States to U.S. residents. It is a rich resource for understanding a wide array of maternal, paternal, and infant characteristics, and their implications on public health.
 
 <p>
   <img src="https://img.shields.io/badge/Python_Version-3.10%2B-blue" title="Python Version">
@@ -14,10 +14,13 @@ Welcome to my GitHub repository, where I showcase my skills and projects in data
 
   <p>
 
+## About The Data
+
+This dataset, sourced from the CDC's National Center for Health Statistics, provides detailed statistics on live births in the United States from 2016 to 2022, including demographic and health information derived from birth certificates. It covers a range of data such as mother's race, age, tobacco use, delivery methods, and congenital anomalies. The dataset ensures privacy by suppressing data representing 1-9 births and is a part of the National Vital Statistics System available on the CDC WONDER Online Database. For more information visit: https://wonder.cdc.gov/wonder/help/Natality-expanded.html
 
 
 
-## Technical Skills
+## Technical Skills Used
 
 - **SQL Databases:**
   - **Google** **BigQuery:** Querying database to clean data.
