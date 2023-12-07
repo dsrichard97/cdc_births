@@ -25,7 +25,7 @@ An SQL analysis of the relationship between live birth rates in the United State
 
 ## Datasets used
 Seven key [datasets](bigquery-public-data.sdoh_cdc_wonder_natality) for this case study
-
+![alt text](./images/ERD.PNG)
 
 
 
