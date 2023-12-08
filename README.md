@@ -127,7 +127,7 @@ The heatmap of the correlation matrix provides insights into how these variables
   <section id="notebook">
     <h2>Explore the notebook</h2
  <p>
-To explore the R notebook file click here [here](cdcsummary.pdf) [here](cdcsummary.pdf).
+To explore the R notebook file click here [here](https://github.com/dsrichard97/cdc_births/blob/main/cdcsummary.pdf).
 
 <P>
   <section id="report">
