@@ -7,12 +7,18 @@ Some preliminary questions......
 
 ````sql
 SELECT
-    AVE_AGE_OF_MOTHER, AVE_NUMBER_OF_PRENATAL_WKS, COUNT(*) AS Morbidity_Count
+    a.Year,
+    AVG(a.Births) AS average_births
 FROM
-    `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality_by_maternal_morbidity`
+    `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality` AS a
+INNER JOIN
+    `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality_by_maternal_morbidity` AS b
+ON
+    a.County_of_Residence_FIPS = b.County_of_Residence_FIPS
 GROUP BY
-    AVE_AGE_OF_MOTHER, AVE_NUMBER_OF_PRENATAL_WKS
-LIMIT 1000;
+        Year
+ORDER BY 
+        Year;
 
 ````
 
