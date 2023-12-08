@@ -1,5 +1,5 @@
 # CDC Births Data Summary
-<p align="center">
+<p> align="center">
   <img src="birthsjpg.jpg" />
 </p>
 
