@@ -105,6 +105,18 @@ Seven key [datasets](datasets.md) for this case study
   <section id="quick-glance">
     <h2>Quick glance at the Results</h2>
  <p>
+   Distribution
+   
+<p align="center">
+  <img src="distrib.jpg" width="300" alt="Sublime's custom image"/>
+</p>
+
+Correlation Matrix
+<p align="center">
+  <img src="corr.jpg" width="300" alt="Sublime's custom image"/>
+</p>
+
+
 
 <P>
   <section id="limitation">
