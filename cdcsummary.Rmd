@@ -1,0 +1,329 @@
+---
+title: "cdc_findings"
+output:
+  pdf_document: default
+  html_document: default
+date: "2023-12-08"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data Set Information:
+
+This data set encompasses detailed statistics from the CDC's National Center for Health Statistics regarding live births in the United States, spanning from 2016 to 2022. It features a comprehensive range of demographic and health information derived from birth certificates. Key attributes include maternal age, pre-pregnancy BMI, birth weight, gestational age, county of residence, and various other health-related factors. This rich dataset offers insights into socio-economic, racial, and maternal and infant health aspects across different counties. The dataset, part of the National Vital Statistics System, is a valuable resource for in-depth analysis and research in public health and is accessible via the CDC WONDER Online Database.
+
+## Objective: 
+To understand the dataset's basic characteristics, identify patterns, outliers, anomalies, and underlying structures.
+
+## Research Goal 
+1.What are the key socio-economic and demographic predictors of maternal and infant health outcomes, as indicated by machine learning models?
+2. Which machine learning algorithm provides the most accurate predictions of high-risk pregnancies based on socio-economic and racial factors?
+
+## EDA - Exploratory Data Analysis
+```{r}
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+library(randomForest)
+library(tidyverse)
+library(tidyr)
+library(caret)
+library(corrplot)
+
+# Read the data
+data <- read.csv("cdc_county_data.csv")
+head(data,5)
+
+
+```
+
+```{r}
+# EDA: Descriptive Statistics
+descriptive_stats <- summary(data)
+
+# EDA: Distribution Analysis
+pdf("distribution_analysis.pdf")
+hist(data$Ave_Age_of_Mother, main="Distribution of Average Age of Mother", xlab="Average Age of Mother", col="blue", border="black")
+hist(data$Ave_Pre_pregnancy_BMI, main="Distribution of Average Pre-pregnancy BMI", xlab="Average Pre-pregnancy BMI", col="green", border="black")
+hist(data$Ave_Birth_Weight_gms, main="Distribution of Average Birth Weight (gms)", xlab="Average Birth Weight (gms)", col="red", border="black")
+dev.off()
+
+# EDA: Outlier Detection
+pdf("boxplot_analysis.pdf")
+boxplot(data$Ave_Age_of_Mother, main="Boxplot of Average Age of Mother", ylab="Average Age of Mother")
+boxplot(data$Ave_Pre_pregnancy_BMI, main="Boxplot of Average Pre-pregnancy BMI", ylab="Average Pre-pregnancy BMI")
+boxplot(data$Ave_Birth_Weight_gms, main="Boxplot of Average Birth Weight (gms)", ylab="Average Birth Weight (gms)")
+dev.off()
+
+# EDA: Initial Correlation Assessment
+key_variables <- data[, c("Ave_Age_of_Mother", "Ave_Pre_pregnancy_BMI", "Ave_Birth_Weight_gms")]
+correlation_matrix <- cor(key_variables, use="complete.obs")
+corrplot(correlation_matrix, method="circle")
+
+# Save the correlation plot
+pdf("correlation_matrix.pdf")
+corrplot(correlation_matrix, method="circle")
+dev.off()
+
+# Initial Visualization: Scatter Plot - Example
+pdf("scatter_plot.pdf")
+ggplot(data, aes(x=Ave_Age_of_Mother, y=Ave_Birth_Weight_gms)) +
+  geom_point() +
+  labs(title="Scatter Plot: Age of Mother vs Birth Weight", x="Average Age of Mother", y="Average Birth Weight (gms)")
+dev.off()
+
+```
+
+### Descriptive Statistics
+Ave_Age_of_Mother: Shows the average age of mothers in different counties and years.
+Ave_Pre_pregnancy_BMI: Indicates the average Body Mass Index before pregnancy.
+Ave_Birth_Weight_gms: Reflects the average birth weight of newborns in grams.
+
+### Distribution Analysis
+Maternal Age: The distribution of the average age of mothers seems roughly normal but may be slightly skewed towards younger ages.
+Pre-pregnancy BMI: This variable also appears to follow a normal distribution, indicating a range of BMI values across the dataset.
+Birth Weight: The birth weight distribution is roughly normal, suggesting a typical spread of newborn weights.
+
+### Outlier Detection
+Maternal Age: There are some outliers, indicating a few counties with unusually high or low average maternal ages.
+Pre-pregnancy BMI: There are outliers present, suggesting some extremes in BMI values.
+Birth Weight: Outliers are observed here as well, indicating some births with significantly high or low weights.
+
+
+## Research Question 1: Key Socio-Economic and Demographic Predictors
+We will use a machine learning model to identify the most significant predictors of maternal and infant health outcomes.
+```{r}
+# Install and load necessary libraries
+if (!require("caret")) install.packages("caret")
+library(caret)
+if (!require("randomForest")) install.packages("randomForest")
+library(randomForest)
+if (!require("ROSE")) install.packages("ROSE")
+library(ROSE)
+
+# Selecting relevant predictors and the target variable
+predictors <- data %>% select(Ave_Age_of_Mother, Ave_Pre_pregnancy_BMI, Ave_Birth_Weight_gms, Ave_Number_of_Prenatal_Wks, Maternal_Morbidity_YN)
+target <- data$Births # Or any other relevant target variable
+
+# Splitting data into training and test sets
+set.seed(123)
+trainIndex <- createDataPartition(target, p = .8, list = FALSE, times = 1)
+trainData <- predictors[trainIndex, ]
+testData <- predictors[-trainIndex, ]
+trainTarget <- target[trainIndex]
+testTarget <- target[-trainIndex]
+
+# Training a Random Forest model
+rf_model <- randomForest(trainData, as.factor(trainTarget), ntree = 100)
+rf_importance <- importance(rf_model)
+
+# Displaying feature importance
+print(rf_importance)
+
+```
+Ave_Birth_Weight_gms (2429.82):
+This variable, representing the average birth weight in grams, appears to be the most significant predictor in the model. A higher Mean Decrease Gini value indicates that this feature plays a crucial role in predicting the target variable.
+
+Ave_Age_of_Mother (2290.50):
+The average age of the mother is also a strong predictor, second only to birth weight. This suggests that maternal age significantly influences the outcome of interest.
+
+Ave_Pre_pregnancy_BMI (2243.89):
+The average pre-pregnancy BMI is another important predictor. Its influence is slightly less than that of maternal age but still substantial.
+
+Ave_Number_of_Prenatal_Wks (2202.71):
+The average number of prenatal weeks also shows considerable importance in the model. This reflects the impact of prenatal care duration on the target variable.
+
+Maternal_Morbidity_YN (27.30):
+This variable has a much lower importance score compared to others. It indicates whether maternal morbidity was noted, but it seems to have a lesser impact on the prediction of the target variable in the model.
+
+note:
+- The model suggests that birth weight, maternal age, pre-pregnancy BMI, and the number of prenatal weeks are critical factors.
+
+
+## 2. ML Algorithm Accuracy
+
+- using radial algorithm
+
+```{r}
+# Check data types before conversion
+str(svm_trainData)
+
+# Convert to numeric, handle non-numeric columns appropriately
+svm_trainData <- data.frame(lapply(svm_trainData, function(x) {
+  if (is.factor(x) || is.character(x)) {
+    as.numeric(as.factor(x))  # Convert factors or characters to numeric
+  } else {
+    as.numeric(x)  # Convert other types to numeric
+  }
+}))
+
+# Ensure target variable is numeric
+svm_trainTarget <- as.numeric(svm_trainTarget)
+
+# Check again for NAs
+sum(is.na(svm_trainData))
+sum(is.na(svm_trainTarget))
+
+# Verify the distribution of the target variable after sampling
+table(svm_trainTarget)
+
+# Retrain the SVM model
+svm_model <- svm(x = svm_trainData, y = svm_trainTarget, kernel = "radial", cost = 0.5)
+
+# Checkpoint 1: Model training completed
+print("SVM model trained successfully.")
+
+# Prepare test data for prediction
+testData <- data.frame(lapply(testData, function(x) {
+  if (is.factor(x) || is.character(x)) {
+    as.numeric(as.factor(x))
+  } else {
+    as.numeric(x)
+  }
+}))
+
+# Checkpoint 2: Test data prepared for prediction
+print("Test data prepared.")
+
+# Make predictions
+svm_prediction <- predict(svm_model, testData)
+
+# Checkpoint 3: Prediction completed
+print("Prediction completed.")
+
+# Calculate RMSE
+testTarget <- as.numeric(testTarget)  # Ensure testTarget is numeric
+svm_rmse <- sqrt(mean((svm_prediction - testTarget)^2))
+
+# Checkpoint 4: RMSE calculated
+print("RMSE calculated.")
+
+# Output RMSE
+print(svm_rmse)
+
+```
+
+-using sigmoid
+
+```{r}
+# Check data types before conversion
+str(svm_trainData)
+
+# Convert to numeric, handle non-numeric columns appropriately
+svm_trainData <- data.frame(lapply(svm_trainData, function(x) {
+  if (is.factor(x) || is.character(x)) {
+    as.numeric(as.factor(x))  # Convert factors or characters to numeric
+  } else {
+    as.numeric(x)  # Convert other types to numeric
+  }
+}))
+
+# Ensure target variable is numeric
+svm_trainTarget <- as.numeric(svm_trainTarget)
+
+# Check again for NAs
+sum(is.na(svm_trainData))
+sum(is.na(svm_trainTarget))
+
+# Verify the distribution of the target variable after sampling
+table(svm_trainTarget)
+
+# Retrain the SVM model
+svm_model <- svm(x = svm_trainData, y = svm_trainTarget, kernel = "sigmoid", cost = 0.5)
+
+# Checkpoint 1: Model training completed
+print("SVM model trained successfully.")
+
+# Prepare test data for prediction
+testData <- data.frame(lapply(testData, function(x) {
+  if (is.factor(x) || is.character(x)) {
+    as.numeric(as.factor(x))
+  } else {
+    as.numeric(x)
+  }
+}))
+
+# Checkpoint 2: Test data prepared for prediction
+print("Test data prepared.")
+
+# Make predictions
+svm_prediction <- predict(svm_model, testData)
+
+# Checkpoint 3: Prediction completed
+print("Prediction completed.")
+
+# Calculate RMSE
+testTarget <- as.numeric(testTarget)  # Ensure testTarget is numeric
+svm_rmse <- sqrt(mean((svm_prediction - testTarget)^2))
+
+# Checkpoint 4: RMSE calculated
+print("RMSE calculated.")
+
+# Output RMSE
+print(svm_rmse)
+
+```
+
+```{r}
+# Check data types before conversion
+str(svm_trainData)
+
+# Convert to numeric, handle non-numeric columns appropriately
+svm_trainData <- data.frame(lapply(svm_trainData, function(x) {
+  if (is.factor(x) || is.character(x)) {
+    as.numeric(as.factor(x))  # Convert factors or characters to numeric
+  } else {
+    as.numeric(x)  # Convert other types to numeric
+  }
+}))
+
+# Ensure target variable is numeric
+svm_trainTarget <- as.numeric(svm_trainTarget)
+
+# Check again for NAs
+sum(is.na(svm_trainData))
+sum(is.na(svm_trainTarget))
+
+# Verify the distribution of the target variable after sampling
+table(svm_trainTarget)
+
+# Retrain the SVM model
+svm_model <- svm(x = svm_trainData, y = svm_trainTarget, kernel = "polynomial", cost = 0.5)
+
+# Checkpoint 1: Model training completed
+print("SVM model trained successfully.")
+
+# Prepare test data for prediction
+testData <- data.frame(lapply(testData, function(x) {
+  if (is.factor(x) || is.character(x)) {
+    as.numeric(as.factor(x))
+  } else {
+    as.numeric(x)
+  }
+}))
+
+# Checkpoint 2: Test data prepared for prediction
+print("Test data prepared.")
+
+# Make predictions
+svm_prediction <- predict(svm_model, testData)
+
+# Checkpoint 3: Prediction completed
+print("Prediction completed.")
+
+# Calculate RMSE
+testTarget <- as.numeric(testTarget)  # Ensure testTarget is numeric
+svm_rmse <- sqrt(mean((svm_prediction - testTarget)^2))
+
+# Checkpoint 4: RMSE calculated
+print("RMSE calculated.")
+
+# Output RMSE
+print(svm_rmse)
+
+```
+
+2. Which machine learning algorithm provides the most accurate predictions of high-risk pregnancies based on socio-economic and racial factors?
+The radial algorithm did the best in rsme to train the model! This model assumption is worth looking into high pregnancies assumptions for a further deep dive.
