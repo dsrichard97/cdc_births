@@ -18,7 +18,7 @@ The datasets and entries orginal storage.....
 ![alt text](cntymm.png)
 
 ### County natality by mother race
-![alt text](picdataset.png)
+![alt text](cntymr.png)
 
 ### County natality by payment
-![alt text](picdataset.png)
+![alt text](cntyp.png)
