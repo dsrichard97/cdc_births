@@ -190,3 +190,27 @@ Williamson County,TN   |  24.68|
 Marin County,CA   |  24.69|
 
 
+
+## Summary
+Average Number of Births Per Year Across All Counties:
+The results indicated a decreasing trend in average births from 2016 to 2018.
+
+
+Year with the Highest Average Number of Births:
+This query identifies 2016 as the year with the highest average number of births. This insight can be important for understanding demographic trends or evaluating the impact of health policies or to further research economic factors during this period.
+
+Year with the Lowest Average Number of Births:
+The year 2018 is identified as having the lowest average number of births. Investigating the factors contributing to this decrease could be a critical area of analysis.
+
+
+County with the Highest Average Age of Mothers:
+Marin County, CA, has the highest average age of mothers. This might suggest demographic trends like later pregnancies in life, which could be associated with socio-economic factors. Further research is needed.
+
+County with the Lowest Average Pre-Pregnancy BMI:
+New York County, NY, shows the lowest average pre-pregnancy BMI. This could be indicative of health and lifestyle patterns within this population.
+
+
+Comparison of Counties in Terms of Maternal Characteristics:
+Comparing counties with the highest and lowest values in maternal characteristics (like average age of mothers and average pre-pregnancy BMI) can reveal significant disparities. This comparison shows a trend where urban counties like New York County, NY, and San Francisco County, CA, have lower pre-pregnancy BMI and higher maternal ages. Perhaps a socio-economic factors? Worth investigating trends or other information that can further develop these initial comparisions.
+
+
