@@ -1,5 +1,6 @@
-# CDC Births Data Summary
-
+<h1 align="center">CDC Births Data Summary</h1>
+<p align="center">
+  
 <p align="center">
   <img src="birthsjpg.jpg" width="300" alt="Sublime's custom image"/>
 </p>
