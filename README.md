@@ -115,8 +115,8 @@ Correlation Matrix
 <p align="center">
   <img src="corr.png" width="300" alt="Sublime's custom image"/>
 </p>
-
-
+Initial Correlation Assessment:
+The heatmap of the correlation matrix provides insights into how these variables are related to each other. For instance, a positive correlation between maternal age and birth weight could suggest that older mothers tend to have babies with higher birth weights.
 
 <P>
   <section id="limitation">
