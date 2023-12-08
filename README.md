@@ -1,6 +1,6 @@
 # CDC Births Data Summary
+<p><img src="births.jpg" width="840" height="200" allow="autoplay"><p>
 
-<p>
   <img src="https://img.shields.io/badge/Python_Version-3.10%2B-blue" title="Python Version">
   <img src="https://img.shields.io/github/last-commit/dsrichard97/otherprojects">
   <img src="https://img.shields.io/badge/Type_of_ML-NLP-orange">
