@@ -13,7 +13,6 @@
   <img src="https://img.shields.io/badge/Python-Pandas-green">
   <a href="https://github.com/ellerbrock/open-source-badges/"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
 
-  <p>
     
 ## About The Data
 
