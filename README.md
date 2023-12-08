@@ -14,6 +14,9 @@
   <a href="https://github.com/ellerbrock/open-source-badges/"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
 </p>    
 
+## Initial Problem 
+Exploring the Impact of Socio-Economic and Racial Factors on Maternal and Infant Health Outcomes in Different Counties
+
 
 ## About The Data
 
@@ -35,16 +38,23 @@ Seven key [datasets](datasets.md) for this case study
 
 ![alt text](in1.png)
 
+## Methodology 
+- Exploratory Data Analysis
+- Multivariate Analysis
+- Visualizations
+- Modeling
+- Reporting
 
 
-## Technical Skills Used
 
-- **SQL Databases:**
-  - **Google** **BigQuery:** Querying database to clean data.
 
-- **Programming Languages:**
-  - **R:** Advanced data analysis, visualization, and statistical modeling.
-  - **Python:** Data manipulation, machine learning, and automation with Python.
+
+## Tech Stack
+  - **SQL**: (Scrapping Data)
+  - **R**: (Further investigation)
+  - **Tableau**  (Visuals)
+  - **Github** (Reporting & Reproduce)
+
 
 
 
