@@ -12,10 +12,10 @@ The datasets and entries orginal storage.....
 ![alt text](county_congential.png)
 
 ### County natality by father race
-![alt text](picdataset.png)
+![alt text](cntyf.png)
 
 ### County natality by maternal morbidity 
-![alt text](picdataset.png)
+![alt text](cntymm.png)
 
 ### County natality by mother race
 ![alt text](picdataset.png)
