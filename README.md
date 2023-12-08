@@ -21,18 +21,14 @@
   <ul>
     <li><a href="#initial-problem" target="_parent">Initial Problem</a></li>
     <li><a href="#about the data">About The Data</a></li>
+    <li><a href="#data set used">Data Set Used</a></li>
     <li><a href="#methods">Methods</a></li>
     <li><a href="#tech-stack">Tech Stack</a></li>
     <li><a href="#quick-glance">Quick glance at the Results</a></li>
     <li><a href="#lesson-learned">Lessons learned and Recommendation</a></li>
     <li><a href="#limitation">Limitation and what can be Improved</a></li>
-    <li><a href="#local">Run Locally</a></li>
     <li><a href="#notebook">Explore the notebook</a></li>
     <li><a href="#report">Report and Presentation</a></li>
-    <li><a href="#streamlit">Deployment on streamlit</a></li>
-    <li><a href="#deployed">App deployed on streamlit</a></li>
-    <li><a href="#contribution">Contribution</a></li>
-    <li><a href="#license">License</a></li>
   </ul>
 </p>
 
@@ -56,7 +52,6 @@
 Exploring the Impact of Socio-Economic and Racial Factors on Maternal and Infant Health Outcomes in Different Counties
 
 
-## About The Data
 <P>
   <section id="about the data">
     <h2>About The Data</h2>
@@ -71,7 +66,10 @@ An SQL analysis of the relationship between live birth rates in the United State
 
  [Data Analysis Question & Answers](questions_and_answers.md)
 
-## Datasets used
+<P>
+  <section id="data set used">
+    <h2>Data Set Used</h2>
+    <p>
 Seven key [datasets](datasets.md) for this case study
 
 ![alt text](picdataset.png)
@@ -80,7 +78,10 @@ Seven key [datasets](datasets.md) for this case study
 
 ![alt text](in1.png)
 
-## Methodology 
+<P>
+  <section id="methods">
+    <h2>Methods</h2>
+    <p>
 - Exploratory Data Analysis
 - Multivariate Analysis
 - Visualizations
@@ -90,8 +91,10 @@ Seven key [datasets](datasets.md) for this case study
 
 
 
-
-## Tech Stack
+<P>
+  <section id="tech-stack">
+    <h2>Tech Stack</h2>
+    <p>
   - **SQL** (Scrapping Data)
   - **R** (Further investigation)
   - **Tableau**  (Visuals)
