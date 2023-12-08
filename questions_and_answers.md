@@ -3,7 +3,7 @@ The objective is to analyze county - level births and be able to gain insights a
 
 Some preliminary questions...... 
 
-**1**  How do birth rates vary across different counties?
+**1.**  How do birth rates vary across different counties?
 
 ````sql
 SELECT 
