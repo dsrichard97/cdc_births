@@ -127,7 +127,7 @@ The heatmap of the correlation matrix provides insights into how these variables
   <section id="notebook">
     <h2>Explore the notebook</h2
  <p>
-To explore the R notebook file click here [here](datasets.md).
+To explore the R notebook file click here [here](cdcsummary.docx).
 
 <P>
   <section id="report">
