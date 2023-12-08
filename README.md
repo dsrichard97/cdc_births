@@ -151,7 +151,7 @@ This project offers valuable insights into maternal and infant health, leveragin
   <section id="notebook">
     <h2>Explore the notebook</h2
  <p>
-To explore the R notebook file click here (https://github.com/dsrichard97/cdc_births/blob/main/cdcsummary.pdf).
+To explore the R notebook file click here: (https://github.com/dsrichard97/cdc_births/blob/main/cdcsummary.pdf).
 
 <P>
   <section id="report">
@@ -160,4 +160,5 @@ To explore the R notebook file click here (https://github.com/dsrichard97/cdc_bi
 
  ![alt text](tab.png)
 
+ For more information click here: (https://public.tableau.com/views/cdc_snapshot/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
