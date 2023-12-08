@@ -30,7 +30,7 @@ Seven key [datasets](datasets.md) for this case study
 
 ## Entity Relationship Diagram
 
-![alt text](in.png)
+![alt text](in1.png)
 
 
 
