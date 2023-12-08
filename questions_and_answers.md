@@ -22,6 +22,7 @@ ORDER BY
 
 ````
 
+**Results:**
 year |average_births|
 ----------|--------|
 2016   |  6911.056|
@@ -50,7 +51,6 @@ ORDER BY
 LIMIT 1; -- limit to the first entry
 ````
 **Results:**
-
 year|average_births|
 ----------|--------|
 2016   |  6911.056|
@@ -59,109 +59,78 @@ year|average_births|
 **3.** Identify the year with the lowest average number of births:
 
 ```sql
-WITH get_top_crime AS (
-	SELECT 
-		initcap(crime_type) AS crime_type,
-		count(*) AS n_crimes
-	FROM 
-		chicago.crimes
-	GROUP BY 
-		crime_type
-	ORDER BY 
-		n_crimes DESC
-)
 SELECT
-	crime_type,
-	n_crimes,
-	round(100 * n_crimes::NUMERIC / sum(n_crimes) OVER (), 2) AS total_percentage
+    a.Year,
+    AVG(a.Births) AS average_births
 FROM
-	get_top_crime
-LIMIT 3;
+    `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality` AS a
+INNER JOIN
+    `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality_by_maternal_morbidity` AS b
+ON
+    a.County_of_Residence_FIPS = b.County_of_Residence_FIPS
+GROUP BY
+        Year
+ORDER BY 
+-- we want the highest average number of births by descending order
+        average_births ASC
+LIMIT 1; -- limit to the first entry
 ```
 
 **Results:**
-
-crime_type     |n_crimes|total_percentage|
----------------|--------|----------------|
-Theft          |  264701|           22.25|
-Battery        |  222214|           18.68|
-Criminal Damage|  131716|           11.07|
+year|average_births|
+----------|--------|
+2018   |  6635.648|
 
 **4.** Find the county with the highest average age of mothers:
 
 ````sql
-SELECT 
-	initcap(t2.community_name) AS community,
-	t2.population,
-	t2.density,
-	count(*) AS reported_crimes
-FROM 
-	chicago.crimes AS t1
-JOIN
-	chicago.community AS t2
-ON 
-	t2.community_id = t1.community_id
-GROUP BY 
-	t2.community_name,
-	t2.population,
-	t2.density
+SELECT
+    a.County_of_Residence,
+    AVG(a.Ave_Age_of_Mother) AS avg_age_of_mothers
+FROM
+    `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality` AS a
+INNER JOIN
+    `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality_by_maternal_morbidity` AS b
+ON
+    a.County_of_Residence_FIPS = b.County_of_Residence_FIPS
+GROUP BY
+        County_of_Residence
 ORDER BY 
-	reported_crimes DESC
-LIMIT 10;
+-- we want to order by average age of mothers
+        avg_age_of_mothers DESC
 ````
 
 **Results:**
 
-community      |population|density |reported_crimes|
----------------|----------|--------|---------------|
-Austin         |     96557|13504.48|          66662|
-Near North Side|    105481|38496.72|          51977|
-Near West Side |     67881|11929.88|          41773|
-South Shore    |     53971|18420.14|          40984|
-Loop           |     42298|25635.15|          40245|
-North Lawndale |     34794|10839.25|          39115|
-Humboldt Park  |     54165|15045.83|          34992|
-Auburn Gresham |     44878|11903.98|          33680|
-West Town      |     87781|19166.16|          32812|
-Roseland       |     38816| 8053.11|          30836|
+County_of_Residence|avg_age_of_mothers|
+----------|--------|
+Marin County,CA   |  33.16|
 
 **5.** Find the county with the lowest average pre-pregnancy BMI:
 
 ````sql
-SELECT 
-	initcap(t2.community_name) AS community,
-	t2.population,
-	t2.density,
-	count(*) AS reported_crimes
-FROM 
-	chicago.crimes AS t1
-JOIN
-	chicago.community AS t2
-ON 
-	t2.community_id = t1.community_id
-GROUP BY 
-	t2.community_name,
-	t2.population,
-	t2.density
+SELECT
+    a.County_of_Residence,
+    AVG(a.Ave_Pre_pregnancy_BMI) AS avg_pre_pregnancy_BMI
+FROM
+    `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality` AS a
+INNER JOIN
+    `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality_by_maternal_morbidity` AS b
+ON
+    a.County_of_Residence_FIPS = b.County_of_Residence_FIPS
+GROUP BY
+        County_of_Residence
 ORDER BY 
-	reported_crimes
-LIMIT 10;
+-- we want the lowest average pre-pregrancy BMI by ascending order
+        avg_pre_pregnancy_BMI ASC
+LIMIT 1; -- limit to the first entry
 ````
 
 **Results:**
 
-community      |population|density |reported_crimes|
----------------|----------|--------|---------------|
-Edison Park    |     11525|10199.12|           1336|
-Burnside       |      2527| 4142.62|           1787|
-Forest Glen    |     19596| 6123.75|           2601|
-Mount Greenwood|     18628|  6873.8|           2609|
-Hegewisch      |     10027| 1913.55|           2861|
-Montclare      |     14401|14546.46|           2905|
-Oakland        |      6799|11722.41|           3289|
-Fuller Park    |      2567| 3615.49|           3616|
-Archer Heights |     14196| 7062.69|           4011|
-Mckinley Park  |     15923|11292.91|           4081|
+County_of_Residence|avg_pre_pregrancy_BMI|
+----------|--------|
+New York County,NY   |  23.89|
 
 **6.** Compare the counties with the highest and lowest values in terms of maternal characteristics:
 
