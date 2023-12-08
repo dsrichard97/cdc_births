@@ -33,26 +33,28 @@ year |average_births|
 **2.** Identify the year with the highest average number of births:
 
 ````sql
-SELECT 
-	initcap(crime_type) AS crime_type,
-	count(*) AS n_crimes
-FROM 
-	chicago.crimes
-WHERE 
-	crime_type IN ('homicide', 'battery', 'assault')
-GROUP BY 
-	crime_type
+SELECT
+    a.Year,
+    AVG(a.Births) AS average_births
+FROM
+    `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality` AS a
+INNER JOIN
+    `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality_by_maternal_morbidity` AS b
+ON
+    a.County_of_Residence_FIPS = b.County_of_Residence_FIPS
+GROUP BY
+        Year
 ORDER BY 
-	n_crimes DESC;
+-- we want the highest average number of births by descending order
+        average_births DESC
+LIMIT 1; -- limit to the first entry
 ````
-
 **Results:**
 
-crime_type|n_crimes|
+year|averaged_births|
 ----------|--------|
-Battery   |  222214|
-Assault   |  100411|
-Homicide  |    3440|
+2016   |  6911.056|
+
 
 **3.** Identify the year with the lowest average number of births:
 
