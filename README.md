@@ -112,7 +112,7 @@ Seven key [datasets](datasets.md) for this case study
 <P>
   <section id="notebook">
     <h2>Explore the notebook</h2
-
+To explore the R notebook file click here.
 
 <P>
   <section id="report">
