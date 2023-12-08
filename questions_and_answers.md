@@ -3,7 +3,7 @@ The objective is to analyze county - level births and be able to gain insights a
 
 Some preliminary questions...... 
 
-** Q1.**  How do birth rated vary across different counties?
+**1**  How do birth rates vary across different counties?
 
 ````sql
 SELECT 
@@ -18,7 +18,7 @@ Total Reported Crimes|
 ---------------------|
 1,189,780           |
 
-**2.** List the total amount of Homicides, Batteries and Assaults reported between 2018 and 2022.
+**2.** What is the average age of mothers at the time of birth in each county?
 
 ````sql
 SELECT 
@@ -42,7 +42,7 @@ Battery   |  222214|
 Assault   |  100411|
 Homicide  |    3440|
 
-**3.** Which are the 3 most common crimes reported and what percentage amount are they from the total amount of reported crimes?
+**3.** Which counties report the highest incidence of births with abnormal conditions?
 
 ```sql
 WITH get_top_crime AS (
@@ -73,7 +73,7 @@ Theft          |  264701|           22.25|
 Battery        |  222214|           18.68|
 Criminal Damage|  131716|           11.07|
 
-**4.** What are the top ten communities that had the MOST amount of crimes reported?  Include the current population, density and order by the number of reported crimes.
+**4.** Are there significant differences in birth statistics (like average birth weight, gestational age) across different father or mother races?
 
 ````sql
 SELECT 
@@ -111,7 +111,7 @@ Auburn Gresham |     44878|11903.98|          33680|
 West Town      |     87781|19166.16|          32812|
 Roseland       |     38816| 8053.11|          30836|
 
-**5.** What are the top ten communities that had the LEAST amount of crimes reported?  Include the current population, density and order by the number of reported crimes.
+**5.** Does the source of payment correlate with differences in birth outcomes like average birth weight or gestational age?
 
 ````sql
 SELECT 
