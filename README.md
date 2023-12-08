@@ -1,6 +1,7 @@
 # CDC Births Data Summary
-<p> align="center">
-  <img src="birthsjpg.jpg" />
+
+<p align="center">
+  <img src="birthsjpg.jpg" alt="Sublime's custom image"/>
 </p>
 
   <img src="https://img.shields.io/badge/Python_Version-3.10%2B-blue" title="Python Version">
