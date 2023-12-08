@@ -7,11 +7,12 @@ Some preliminary questions......
 
 ````sql
 SELECT
-	Ave_Age_of_Mother, Ave_Number_of_Prenatal_Wks, COUNT(*) AS Morbidity_Count
+    AVE_AGE_OF_MOTHER, AVE_NUMBER_OF_PRENATAL_WKS, COUNT(*) AS Morbidity_Count
 FROM
-	County_Natality_by_Maternal_Morbidity
+    `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality_by_maternal_morbidity`
 GROUP BY
-	Ave_Age_of_Mother, Ave_Number_of_Prenatal_Wks;
+    AVE_AGE_OF_MOTHER, AVE_NUMBER_OF_PRENATAL_WKS
+LIMIT 1000;
 
 ````
 
