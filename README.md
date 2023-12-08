@@ -121,13 +121,14 @@ The heatmap of the correlation matrix provides insights into how these variables
 <P>
   <section id="limitation">
     <h2>Limitation and what can be Improved</h2
- <p>
+                                             
 - Data Scope: Limited to U.S. data; expanding the data set to include global statistics could offer more comprehensive insights.
 - Model Diversity: Explore additional machine learning models beyond Random Forest and SVM for potentially better predictions or insights.
 - Feature Engineering: Experiment with more complex features or interactions between variables to enhance model performance.
 - Real-Time Data Integration: Incorporate real-time data updates for more dynamic and current analyses.
 - User Interface: Develop an interactive dashboard for easier access and interpretation of results by non-technical users.
-- Conclusion:
+
+
 This project offers valuable insights into maternal and infant health, leveraging advanced data analytics and machine learning techniques. Future work could expand the dataset, explore new models, and enhance user interaction to increase the impact and reach of the findings.
    
 <P>
