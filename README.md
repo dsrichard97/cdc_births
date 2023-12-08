@@ -108,12 +108,12 @@ Seven key [datasets](datasets.md) for this case study
    Distribution
    
 <p align="center">
-  <img src="distrib.jpg" width="300" alt="Sublime's custom image"/>
+  <img src="distrib.png" width="300" alt="Sublime's custom image"/>
 </p>
 
 Correlation Matrix
 <p align="center">
-  <img src="corr.jpg" width="300" alt="Sublime's custom image"/>
+  <img src="corr.png" width="300" alt="Sublime's custom image"/>
 </p>
 
 
