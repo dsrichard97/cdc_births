@@ -1,4 +1,9 @@
-**1.**  List the total number of reported crimes between 2018 and 2022?
+## Preliminary 
+The objective is to analyze county - level births and be able to gain insights about the data with any prelimary work concerning socio-economic, racial, and health related factors.
+
+Some preliminary questions...... 
+
+** County** - **Level** **Birth** **Trends **  How do birth rated vary across different counties?
 
 ````sql
 SELECT 
