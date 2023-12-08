@@ -101,6 +101,23 @@ Seven key [datasets](datasets.md) for this case study
   - **Github** (Reporting & Reproduce)
 
 
+<P>
+  <section id="quick-glance">
+    <h2>Quick glance at the Results</h2>
+
+<P>
+  <section id="limitation">
+    <h2>Limitation and what can be Improved</h2
+
+<P>
+  <section id="notebook">
+    <h2>Explore the notebook</h2
+
+
+<P>
+  <section id="report">
+    <h2>Report and Presentation</h2
+
 
 
 
