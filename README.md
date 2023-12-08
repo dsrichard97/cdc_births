@@ -13,9 +13,46 @@
   <img src="https://img.shields.io/badge/STAT-Time Series-blue">
   <img src="https://img.shields.io/badge/Python-Pandas-green">
   <a href="https://github.com/ellerbrock/open-source-badges/"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
-</p>    
+</p> 
 
-## Initial Problem 
+
+<p>
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><a href="#initial-problem" target="_parent">Initial Problem</a></li>
+    <li><a href="#data-source">Data Source</a></li>
+    <li><a href="#methods">Methods</a></li>
+    <li><a href="#tech-stack">Tech Stack</a></li>
+    <li><a href="#quick-glance">Quick glance at the Results</a></li>
+    <li><a href="#lesson-learned">Lessons learned and Recommendation</a></li>
+    <li><a href="#limitation">Limitation and what can be Improved</a></li>
+    <li><a href="#local">Run Locally</a></li>
+    <li><a href="#notebook">Explore the notebook</a></li>
+    <li><a href="#report">Report and Presentation</a></li>
+    <li><a href="#streamlit">Deployment on streamlit</a></li>
+    <li><a href="#deployed">App deployed on streamlit</a></li>
+    <li><a href="#contribution">Contribution</a></li>
+    <li><a href="#license">License</a></li>
+  </ul>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<P>
+  <section id="initial-problem">
+    <h2>Business Problem</h2>
+    <p>
 Exploring the Impact of Socio-Economic and Racial Factors on Maternal and Infant Health Outcomes in Different Counties
 
 
