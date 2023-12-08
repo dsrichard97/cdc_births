@@ -20,7 +20,7 @@
   <h2>Table of Contents</h2>
   <ul>
     <li><a href="#initial-problem" target="_parent">Initial Problem</a></li>
-    <li><a href="#data-source">Data Source</a></li>
+    <li><a href="#about the data">About The Data</a></li>
     <li><a href="#methods">Methods</a></li>
     <li><a href="#tech-stack">Tech Stack</a></li>
     <li><a href="#quick-glance">Quick glance at the Results</a></li>
@@ -51,12 +51,16 @@
 
 <P>
   <section id="initial-problem">
-    <h2>Business Problem</h2>
+    <h2>Initial Problem</h2>
     <p>
 Exploring the Impact of Socio-Economic and Racial Factors on Maternal and Infant Health Outcomes in Different Counties
 
 
 ## About The Data
+<P>
+  <section id="about the data">
+    <h2>About The Data</h2>
+    <p>
 
 This dataset, sourced from the CDC's National Center for Health Statistics, provides detailed statistics on live births in the United States from 2016 to 2022, including demographic and health information derived from birth certificates. It covers a range of data such as mother's race, age, tobacco use, delivery methods, and congenital anomalies. The dataset ensures privacy by suppressing data representing 1-9 births and is a part of the National Vital Statistics System available on the CDC WONDER Online Database. For more information visit: https://wonder.cdc.gov/wonder/help/Natality-expanded.html
 
