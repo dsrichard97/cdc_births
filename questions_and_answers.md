@@ -51,7 +51,7 @@ LIMIT 1; -- limit to the first entry
 ````
 **Results:**
 
-year|averaged_births|
+year|average_births|
 ----------|--------|
 2016   |  6911.056|
 
