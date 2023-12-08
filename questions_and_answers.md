@@ -16,7 +16,7 @@ LIMIT 1000;
 
 ````
 
-![Alt Text](results1.gif)
+![Alt Text](result1.gif)
 
 
 
