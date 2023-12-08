@@ -135,41 +135,58 @@ New York County,NY   |  23.89|
 **6.** Compare the counties with the highest and lowest values in terms of maternal characteristics:
 
 ````sql
-ELECT
-	to_char(t1.reported_crime_date, 'Month') AS month,
-	COUNT(*) AS n_crimes,
-	round(avg(t2.temp_high), 1) avg_high_temp,
-	PERCENTILE_CONT(0.5) WITHIN GROUP(ORDER BY t2.temp_high) AS median_high_temp
+SELECT
+    a.County_of_Residence,
+    AVG(a.Ave_Age_of_Mother) AS avg_age_of_mothers
 FROM
-	chicago.crimes AS t1
-JOIN 
-	chicago.weather AS t2
-ON 
-	t1.reported_crime_date = t2.weather_date
+    `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality` AS a
+INNER JOIN
+    `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality_by_maternal_morbidity` AS b
+ON
+    a.County_of_Residence_FIPS = b.County_of_Residence_FIPS
 GROUP BY
-	month
-ORDER BY
-	n_crimes DESC;
+        County_of_Residence
+ORDER BY 
+-- we want to order by average age of mothers
+        avg_age_of_mothers DESC
+LIMIT 5; -- limit to 5 entry
+
+
+
+-- lowest average pre-pregrnancy BMI by county of residence
+SELECT
+    a.County_of_Residence,
+    AVG(a.Ave_Pre_pregnancy_BMI) AS avg_pre_pregnancy_BMI
+FROM
+    `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality` AS a
+INNER JOIN
+    `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality_by_maternal_morbidity` AS b
+ON
+    a.County_of_Residence_FIPS = b.County_of_Residence_FIPS
+GROUP BY
+        County_of_Residence
+ORDER BY 
+-- we want the lowest average pre-pregrancy BMI by ascending order
+        avg_pre_pregnancy_BMI ASC
+LIMIT 5; -- limit to 5 entry
 ````
 
 **Results:**
+County_of_Residence|avg_age_of_mothers|
+----------|--------|
+Marin County,CA   |  33.16|
+San Francisco County,CA   |  33.08|
+Arlignton County,VA   |  32.53|
+New York County,NY  |  32.36|
+Norfolk County,MA   |  32.28|
 
-month    |n_crimes|avg_high_temp|median_high_temp|
----------|--------|-------------|----------------|
-July     |  111328|         85.2|            86.0|
-August   |  110659|         84.3|            85.0|
-October  |  105563|         62.5|            62.0|
-June     |  105163|         81.5|            81.0|
-September|  105075|         77.2|            78.0|
-May      |  103985|         71.8|            72.0|
-December |   96505|         40.6|            41.0|
-November |   95501|         47.6|            47.0|
-March    |   92947|         48.0|            47.0|
-January  |   92018|         32.3|            34.0|
-April    |   88707|         56.7|            55.0|
-February |   82329|         35.3|            35.0|
+**Results:**
+County_of_Residence|avg_pre_pregrancy_BMI|
+----------|--------|
+New York County,NY   |  23.89|
+San Francisco County,CA   |  24.06|
+Arlignton County,VA   |  24.36|
+Williamson County,TN   |  24.68|
+Marin County,CA   |  24.69|
 
 
-
-
-To be continued....
