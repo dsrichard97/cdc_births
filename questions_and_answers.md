@@ -16,12 +16,9 @@ LIMIT 1000;
 
 ````
 
-**Results:**
-crime_type|n_crimes|
-----------|--------|
-Battery   |  222214|
-Assault   |  100411|
-Homicide  |    3440|
+![Alt Text](results1.gif)
+
+
 
 **2.** What is the average age of mothers at the time of birth in each county?
 
