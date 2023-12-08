@@ -50,8 +50,8 @@ Seven key [datasets](datasets.md) for this case study
 
 
 ## Tech Stack
-  - **SQL**: (Scrapping Data)
-  - **R**: (Further investigation)
+  - **SQL** (Scrapping Data)
+  - **R** (Further investigation)
   - **Tableau**  (Visuals)
   - **Github** (Reporting & Reproduce)
 
