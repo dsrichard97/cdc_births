@@ -118,6 +118,22 @@ Correlation Matrix
 Initial Correlation Assessment:
 The heatmap of the correlation matrix provides insights into how these variables are related to each other. For instance, a positive correlation between maternal age and birth weight could suggest that older mothers tend to have babies with higher birth weights.
 
+Predictive Modeling:
+Used Random Forest model to identify significant predictors.
+Found average birth weight, maternal age, pre-pregnancy BMI, and prenatal weeks as critical factors.
+- Average Birth Weight (grams): 2429.82. This was the most significant predictor.
+- Average Age of Mother: 2290.50. This was a strong predictor, second only to birth weight.
+- Average Pre-pregnancy BMI: 2243.89. Another important predictor​​.
+
+ML Algorithm Accuracy:
+Compared radial, sigmoid, and polynomial kernel functions in SVM.
+Radial kernel function performed best in terms of RMSE, indicating its effectiveness in modeling high-risk pregnancies.
+
+Root Mean Square Error (RMSE):
+Radial Kernel Function -> 8296.19
+Polynomial Kernel Function -> 12857.87
+Sigmoid Kernel Function -> 16844.82​​
+
 <P>
   <section id="limitation">
     <h2>Limitation and what can be Improved</h2
