@@ -130,9 +130,9 @@ Compared radial, sigmoid, and polynomial kernel functions in SVM.
 Radial kernel function performed best in terms of RMSE, indicating its effectiveness in modeling high-risk pregnancies.
 
 Root Mean Square Error (RMSE):
-Radial Kernel Function -> 8296.19
-Polynomial Kernel Function -> 12857.87
-Sigmoid Kernel Function -> 16844.82​​
+- Radial Kernel Function -> 8296.19
+- Polynomial Kernel Function -> 12857.87
+- Sigmoid Kernel Function -> 16844.82​​
 
 <P>
   <section id="limitation">
