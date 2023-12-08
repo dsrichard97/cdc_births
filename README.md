@@ -28,6 +28,10 @@ Seven key [datasets](datasets.md) for this case study
 
 ![alt text](picdataset.png)
 
+## Entity Relationship Diagram
+
+![alt text](picdataset.png)
+
 
 
 ## Technical Skills Used
