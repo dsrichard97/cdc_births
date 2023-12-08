@@ -158,4 +158,6 @@ To explore the R notebook file click here (https://github.com/dsrichard97/cdc_bi
     <h2>Report and Presentation</h2
  <p>
 
+ ![alt text](tab.png)
+
 
