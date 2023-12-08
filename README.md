@@ -81,7 +81,7 @@ Seven key [datasets](datasets.md) for this case study
 <P>
   <section id="methods">
     <h2>Methods</h2>
-    <p>
+ 
 - Exploratory Data Analysis
 - Multivariate Analysis
 - Visualizations
@@ -94,7 +94,7 @@ Seven key [datasets](datasets.md) for this case study
 <P>
   <section id="tech-stack">
     <h2>Tech Stack</h2>
-    <p>
+    
   - **SQL** (Scrapping Data)
   - **R** (Further investigation)
   - **Tableau**  (Visuals)
