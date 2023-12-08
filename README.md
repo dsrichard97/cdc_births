@@ -104,21 +104,22 @@ Seven key [datasets](datasets.md) for this case study
 <P>
   <section id="quick-glance">
     <h2>Quick glance at the Results</h2>
+ <p>
 
 <P>
   <section id="limitation">
     <h2>Limitation and what can be Improved</h2
-
+ <p>
+   
 <P>
   <section id="notebook">
     <h2>Explore the notebook</h2
-                              
+ <p>
 To explore the R notebook file click here.
 
 <P>
   <section id="report">
     <h2>Report and Presentation</h2
-
-
+ <p>
 
 
