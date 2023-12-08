@@ -3,13 +3,13 @@ The datasets and entries orginal storage.....
 
 
 ### County natality
-![alt text](picdataset.png)
+![alt text](county_natality.png)
 
 ### County natality by abnormal conditions
-![alt text](picdataset.png)
+![alt text](county_n_abnormal.png)
 
 ### County natality by congenital abnormalities
-![alt text](picdataset.png)
+![alt text](county_congential.png)
 
 ### County natality by father race
 ![alt text](picdataset.png)
