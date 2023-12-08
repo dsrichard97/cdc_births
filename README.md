@@ -1,5 +1,7 @@
 # CDC Births Data Summary
-<img src="birthsjpg.jpg" width="240" height="200" allow="autoplay">
+<p align="center">
+  <img src="birthsjpg.jpg" />
+</p>
 
   <img src="https://img.shields.io/badge/Python_Version-3.10%2B-blue" title="Python Version">
   <img src="https://img.shields.io/github/last-commit/dsrichard97/otherprojects">
