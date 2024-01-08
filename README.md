@@ -39,15 +39,23 @@
 <section id="SQL-Preliminaries">
   <h2>SQL Preliminaries</h2>
   <p> This report presents an SQL analysis exploring the relationship between live birth rates and anomalies in the United States from 2016 to 2022. The analysis utilizes data from the CDC's National Center for Health Statistics, accessed via Google BigQuery.
-
-<div style="text-align: center;">
-    <strong><b>Data Analysis Questions and Answers</b></strong>
-</div>
-
-
-For detailed information on the datasets used, including variables within each table, please visit: https://github.com/dsrichard97/cdc_births/blob/main/datasets.md.
-
-Additionally, for a comprehensive list of questions and answers related to the data analysis, refer to: https://github.com/dsrichard97/cdc_births/blob/main/questions_and_answers.md
+    
+<p>For detailed information on the datasets used, including variables within each table, please visit the links provided in the table below.</p>
+    <table border="1">
+        <tr>
+            <th>Preliminary SQL Scrub</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>Datasets Details</td>
+            <td><a href="https://github.com/dsrichard97/cdc_births/blob/main/datasets.md">Datasets</a></td>
+        </tr>
+        <tr>
+            <td>Questions and Answers</td>
+            <td><a href="https://github.com/dsrichard97/cdc_births/blob/main/questions_and_answers.md">Q&A</a></td>
+        </tr>
+    </table>
+    
 
   ![alt text](picdataset.png)
 
