@@ -71,33 +71,6 @@
 </section>
 
 
-
-
-
-<P>
-  <section id="methods">
-    <h2>Methods</h2>
- 
-- Exploratory Data Analysis
-- Multivariate Analysis
-- Visualizations
-- Modeling
-- Reporting
-
-
-
-
-<P>
-  <section id="tech-stack">
-    <h2>Tech Stack</h2>
-    
-  - **SQL** (Scrapping Data)
-  - **R** (Further investigation)
-  - **Tableau**  (Visuals)
-  - **Github** (Reporting & Reproduce)
-
-
-<P>
   <section id="quick-glance">
     <h2>Quick glance at the Results</h2>
  <p>
