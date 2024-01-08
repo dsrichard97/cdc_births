@@ -29,6 +29,8 @@
     <li><a href="#SQL-Preliminaries" target="_parent">SQL Preliminaries</a></li>
     <li><a href="#Entity_Relationship_Diagram" target="_parent">Entity Relationship Diagram</a></li>
     <li><a href="#Limitations" target="_parent">Limitations</a></li>
+    <li><a href="#Visuals-Tableau" target="_parent">Visuals</a></li>
+    <li><a href="#Resources" target="_parent">Resources</a></li>
   </ul>
 </section>
 
@@ -133,18 +135,23 @@ Analysis of Kernel Functions in SVM
   </p>
 </section>
 
-<P>
-  <section id="notebook">
-    <h2>Explore the notebook</h2
- <p>
-To explore the R notebook file click here: (https://github.com/dsrichard97/cdc_births/blob/main/cdcsummary.pdf).
 
-<P>
-  <section id="report">
-    <h2>Report and Presentation</h2
- <p>
+<section id="Visuals-Tableau">
+  <h2>Visuals</h2>
+  <p align="center">
+  <img src="tab.png" width="450" alt="Sublime's custom image"/>
+</p>
+</section>
 
- ![alt text](tab.png)
-
- For more information click here: (https://public.tableau.com/views/cdc_snapshot/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
+<section id="Resources">
+  <h2>Resources</h2>
+  <p> 
+    <li><a href="URL">Tableau Dashboard</a></li>
+    <li><a href="URL">High Level Overview by PowerPoint</a></li>
+    <li><a href="URL">High Level Overview of Data</a></li>
+    <li><a href="URL">R code</a></li>
+    <li><a href="URL">Python Code</a></li>
+    <li><a href="URL">CDC Information</a></li>
+  </p>
+</section>
 
