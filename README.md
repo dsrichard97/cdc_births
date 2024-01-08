@@ -25,16 +25,8 @@ This report investigates various factors influencing maternity across the United
 <p>
   <h2>Table of Contents</h2>
   <ul>
-    <li><a href="#initial-problem" target="_parent">Initial Problem</a></li>
-    <li><a href="#about the data">About The Data</a></li>
-    <li><a href="#data set used">Data Set Used</a></li>
-    <li><a href="#methods">Methods</a></li>
-    <li><a href="#tech-stack">Tech Stack</a></li>
-    <li><a href="#quick-glance">Quick glance at the Results</a></li>
-    <li><a href="#lesson-learned">Lessons learned and Recommendation</a></li>
-    <li><a href="#limitation">Limitation and what can be Improved</a></li>
-    <li><a href="#notebook">Explore the notebook</a></li>
-    <li><a href="#report">Report and Presentation</a></li>
+    <li><a href="initial-problem" target="_parent">Initial Problem</a></li>
+    <li><a href="about the data" target="_parent">About The Data</a></li>
   </ul>
 </p>
 
@@ -49,7 +41,10 @@ This report investigates various factors influencing maternity across the United
 This dataset, sourced from the CDC's National Center for Health Statistics, provides detailed statistics on live births in the United States from 2016 to 2022. It includes demographic and health information derived from birth certificates, covering various data points such as the mother's race, age, tobacco use, delivery methods, and congenital anomalies. To ensure privacy, the dataset suppresses data representing 1-9 births. It is part of the National Vital Statistics System and is available on the CDC WONDER Online Database. For more information, visit: https://wonder.cdc.gov/wonder/help/Natality-expanded.html
 
 
-## Data Source
+<P>
+  <section id="data set used">
+    <h2>SQL Preliminaries</h2>
+    <p>
 
 An SQL analysis of the relationship between live birth rates in the United States and anomalies from 2016 to 2022, using data from the CDC's National Center for Health Statistics. (Data is gathered from Google BigQuery)
 
