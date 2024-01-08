@@ -44,7 +44,7 @@
  </p>
 
   <p> 
-    Seven key [datasets](datasets.md) for this case study
+    For a further link on what each dataset has and variables within each table: 
 
   ![alt text](picdataset.png)
 
