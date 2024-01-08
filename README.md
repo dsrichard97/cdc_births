@@ -44,7 +44,7 @@
  </p>
 
   <p> 
-    For a further link on what each dataset has and variables within each table: 
+    For a further link on what each dataset has and variables within each table: https://github.com/dsrichard97/cdc_births/blob/main/datasets.md
 
   ![alt text](picdataset.png)
 
