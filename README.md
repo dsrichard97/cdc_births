@@ -28,6 +28,7 @@
     <li><a href="#about-the-data" target="_parent">About The Data</a></li>
     <li><a href="#SQL-Preliminaries" target="_parent">SQL Preliminaries</a></li>
     <li><a href="#Entity_Relationship_Diagram" target="_parent">Entity Relationship Diagram</a></li>
+    <li><a href="#Limitations" target="_parent">Limitations</a></li>
   </ul>
 </section>
 
@@ -71,8 +72,8 @@
 </section>
 
 
-  <section id="quick-glance">
-    <h2>Quick glance at the Results</h2>
+  <section id="Report_Summary">
+    <h2>Report Summary</h2>
  <p>
    Distribution
    
@@ -84,19 +85,17 @@ Correlation Matrix
 <p align="center">
   <img src="corr.png" width="300" alt="Sublime's custom image"/>
 </p>
-Initial Correlation Assessment:
-The heatmap of the correlation matrix provides insights into how these variables are related to each other. For instance, a positive correlation between maternal age and birth weight could suggest that older mothers tend to have babies with higher birth weights.
 
-Predictive Modeling:
-Used Random Forest model to identify significant predictors.
-Found average birth weight, maternal age, pre-pregnancy BMI, and prenatal weeks as critical factors.
-- Average Birth Weight (grams): 2429.82. This was the most significant predictor.
-- Average Age of Mother: 2290.50. This was a strong predictor, second only to birth weight.
-- Average Pre-pregnancy BMI: 2243.89. Another important predictor​​.
+<b>Initial Correlation Assessment:</b>
+The heatmap reveals relationships between variables. Notably, there's a positive correlation between maternal age and birth weight, suggesting that older mothers often have babies with higher birth weights.
 
-ML Algorithm Accuracy:
-Compared radial, sigmoid, and polynomial kernel functions in SVM.
-Radial kernel function performed best in terms of RMSE, indicating its effectiveness in modeling high-risk pregnancies.
+<b>Predictive Modeling Using Random Forest:</b>
+- Average Birth Weight (grams): 2429.82 - Most significant predictor.
+- Average Age of Mother: 2290.50 - Strong predictor, second to birth weight.
+ -Average Pre-pregnancy BMI: 2243.89 - Another crucial predictor.
+
+Machine Learning Algorithm Accuracy:
+Analysis of Kernel Functions in SVM
 
 <table>
         <tr>
@@ -116,21 +115,24 @@ Radial kernel function performed best in terms of RMSE, indicating its effective
             <td>16844.82</td>
         </tr>
     </table>
-       
+    This summary suggests the Radial kernel function in SVM is most effective for modeling high-risk pregnancies due to its lower RMSE compared to other functions.
 
 <P>
-  <section id="limitation">
-    <h2>Limitation and what can be Improved</h2
-                                             
-- Data Scope: Limited to U.S. data; expanding the data set to include global statistics could offer more comprehensive insights.
-- Model Diversity: Explore additional machine learning models beyond Random Forest and SVM for potentially better predictions or insights.
-- Feature Engineering: Experiment with more complex features or interactions between variables to enhance model performance.
-- Real-Time Data Integration: Incorporate real-time data updates for more dynamic and current analyses.
-- User Interface: Develop an interactive dashboard for easier access and interpretation of results by non-technical users.
+  <section id="Limitations">
+  <h2>Limitations</h2>
+  <p>
+    While this project provides significant insights into maternal and infant health using advanced data analytics and machine learning, there are areas for enhancement:
+    <ul>
+      <li><strong>Data Scope:</strong> Currently limited to U.S. data. Including global statistics could yield more comprehensive insights.</li>
+      <li><strong>Model Diversity:</strong> Exploring machine learning models beyond Random Forest and SVM may offer improved predictions and insights.</li>
+      <li><strong>Feature Engineering:</strong> Utilizing more complex features or exploring interactions between variables could enhance model performance.</li>
+      <li><strong>Real-Time Data Integration:</strong> Incorporating real-time data updates would allow for more dynamic and current analyses.</li>
+      <li><strong>User Interface:</strong> Developing an interactive dashboard would facilitate easier access and interpretation of results for non-technical users.</li>
+    </ul>
+    Future enhancements could include expanding the dataset, exploring new models, and improving user interaction, thereby increasing the impact and reach of the findings.
+  </p>
+</section>
 
-
-This project offers valuable insights into maternal and infant health, leveraging advanced data analytics and machine learning techniques. Future work could expand the dataset, explore new models, and enhance user interaction to increase the impact and reach of the findings.
-   
 <P>
   <section id="notebook">
     <h2>Explore the notebook</h2
