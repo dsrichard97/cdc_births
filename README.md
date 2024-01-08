@@ -16,6 +16,11 @@
   <a href="https://github.com/ellerbrock/open-source-badges/"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
 </p> 
 
+<p>
+  <section id="initial-problem">
+    <h2>Initial Problem</h2>
+</p>
+This report investigates various factors influencing maternity across the United States. It presents an initial analysis of data scraped from the CDC's summary reports, accessible through Google BigQuery.
 
 <p>
   <h2>Table of Contents</h2>
@@ -36,29 +41,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-<P>
-  <section id="initial-problem">
-    <h2>Initial Problem</h2>
-    <p>
-Exploring the Impact of Socio-Economic and Racial Factors on Maternal and Infant Health Outcomes in Different Counties
-
-
 <P>
   <section id="about the data">
     <h2>About The Data</h2>
     <p>
 
-This dataset, sourced from the CDC's National Center for Health Statistics, provides detailed statistics on live births in the United States from 2016 to 2022, including demographic and health information derived from birth certificates. It covers a range of data such as mother's race, age, tobacco use, delivery methods, and congenital anomalies. The dataset ensures privacy by suppressing data representing 1-9 births and is a part of the National Vital Statistics System available on the CDC WONDER Online Database. For more information visit: https://wonder.cdc.gov/wonder/help/Natality-expanded.html
+This dataset, sourced from the CDC's National Center for Health Statistics, provides detailed statistics on live births in the United States from 2016 to 2022. It includes demographic and health information derived from birth certificates, covering various data points such as the mother's race, age, tobacco use, delivery methods, and congenital anomalies. To ensure privacy, the dataset suppresses data representing 1-9 births. It is part of the National Vital Statistics System and is available on the CDC WONDER Online Database. For more information, visit: https://wonder.cdc.gov/wonder/help/Natality-expanded.html
 
 
 ## Data Source
