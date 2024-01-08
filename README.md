@@ -138,9 +138,12 @@ Analysis of Kernel Functions in SVM
 
 <section id="TableauDB">
   <h2>TableauDB</h2>
-  <p align="center">
+
+   <p align="center">
   <img src="tab.png" width="450" alt="Sublime's custom image"/>
-    Gain a clearer understanding of the diverse variables influencing maternal health in our comprehensive data overview. This analysis not only illuminates the myriad factors impacting pregnancy but also reveals how these factors uniquely affect the United States. By exploring this data, users will gain valuable insights into the average trends and magnitudes of these influences. Dive into our dashboard for an enlightening perspective on maternal health – it's designed to captivate and inform, making complex data accessible and engaging for everyone. Click the link <a href="https://public.tableau.com/views/cdc_snapshot/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link">here</a></li>.
+</p>
+<p>
+    Gain a clearer understanding of the diverse variables influencing maternal health in our comprehensive data overview. This analysis not only illuminates the myriad factors impacting pregnancy but also reveals how these factors uniquely affect the United States. By exploring this data, users will gain valuable insights into the average trends and magnitudes of these influences. Dive into our dashboard for an enlightening perspective on maternal health – it's designed to captivate and inform, making complex data accessible and engaging for everyone. Click the link <a href="https://public.tableau.com/views/cdc_snapshot/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link">here</a> .
 </p>
 </section>
 
