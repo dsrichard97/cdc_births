@@ -27,6 +27,7 @@
     <li><a href="#initial-problem" target="_parent">Initial Problem</a></li>
     <li><a href="#about-the-data" target="_parent">About The Data</a></li>
     <li><a href="#SQL-Preliminaries" target="_parent">SQL Preliminaries</a></li>
+    <li><a href="#Entity_Relationship_Diagram" target="_parent">Entity Relationship Diagram</a></li>
   </ul>
 </section>
 
@@ -59,33 +60,19 @@
 
   ![alt text](picdataset.png)
 
-  ## Entity Relationship Diagram
 
-  ![alt text](in1.png)
- </p>
+
+<section id="Entity_Relationship_Diagram">
+  <h2>Entity Relationship Diagram</h2>
+  <p>
+    The entity diagram shows the relationship of the inner join used to combine both the tables. Header in tables suggest the keys for each.
+    <img src="in1.png" width="900" alt="Sublime's custom image"/>
+  </p>
 </section>
 
 
 
 
-
-
-
-
-
-
-
-
-  <section id="data set used">
-    <h2>Data Set Used</h2>
-    <p>
-Seven key [datasets](datasets.md) for this case study
-
-![alt text](picdataset.png)
-
-## Entity Relationship Diagram
-
-![alt text](in1.png)
 
 <P>
   <section id="methods">
