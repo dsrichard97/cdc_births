@@ -29,7 +29,7 @@
     <li><a href="#SQL-Preliminaries" target="_parent">SQL Preliminaries</a></li>
     <li><a href="#Entity_Relationship_Diagram" target="_parent">Entity Relationship Diagram</a></li>
     <li><a href="#Limitations" target="_parent">Limitations</a></li>
-    <li><a href="#Visuals-Tableau" target="_parent">Visuals</a></li>
+    <li><a href="#TableauDB" target="_parent">TableauDB</a></li>
     <li><a href="#Resources" target="_parent">Resources</a></li>
   </ul>
 </section>
@@ -136,17 +136,18 @@ Analysis of Kernel Functions in SVM
 </section>
 
 
-<section id="Visuals-Tableau">
-  <h2>Visuals</h2>
+<section id="TableauDB">
+  <h2>TableauDB</h2>
   <p align="center">
   <img src="tab.png" width="450" alt="Sublime's custom image"/>
+    Gain a clearer understanding of the diverse variables influencing maternal health in our comprehensive data overview. This analysis not only illuminates the myriad factors impacting pregnancy but also reveals how these factors uniquely affect the United States. By exploring this data, users will gain valuable insights into the average trends and magnitudes of these influences. Dive into our dashboard for an enlightening perspective on maternal health – it's designed to captivate and inform, making complex data accessible and engaging for everyone. Click the link <a href="https://public.tableau.com/views/cdc_snapshot/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link">here</a></li>.
 </p>
 </section>
 
 <section id="Resources">
   <h2>Resources</h2>
   <p> 
-    <li><a href="URL">Tableau Dashboard</a></li>
+    <li><a href="https://public.tableau.com/views/cdc_snapshot/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link">Tableau Dashboard</a></li>
     <li><a href="URL">High Level Overview by PowerPoint</a></li>
     <li><a href="URL">High Level Overview of Data</a></li>
     <li><a href="URL">R code</a></li>
