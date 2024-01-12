@@ -29,7 +29,7 @@
     <li><a href="#SQL-Preliminaries" target="_parent">SQL Preliminaries</a></li>
     <li><a href="#Entity_Relationship_Diagram" target="_parent">Entity Relationship Diagram</a></li>
     <li><a href="#Limitations" target="_parent">Limitations</a></li>
-    <li><a href="#TableauDB" target="_parent">TableauDB</a></li>
+    <li><a href="#TableauDB" target="_parent">Dashboard</a></li>
     <li><a href="#Resources" target="_parent">Resources</a></li>
   </ul>
 </section>
@@ -145,7 +145,7 @@ The heatmap reveals relationships between variables. Notably, there's a positive
 
 
 <section id="TableauDB">
-  <h2>TableauDB</h2>
+  <h2>Dashboard</h2>
 
    <p align="center">
   <img src="cdc.png" width="450" alt="Sublime's custom image"/>
