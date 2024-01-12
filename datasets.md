@@ -1,6 +1,8 @@
 # Original dataset
 The original storage locations of the datasets and entries...
 
+### Full dataset
+![alt text](picdataset.png)
 
 ### County natality
 ![alt text](county_natality.png)
