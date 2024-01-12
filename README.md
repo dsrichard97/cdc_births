@@ -60,8 +60,8 @@
         </tr>
     </table>
 
-  <p> Database with entire data tables... 
-  ![alt text](picdataset.png)
+<p align="center">
+  <img src="picdataset.jpg" width="300" alt="Sublime's custom image"/>
 </p>
 
 
