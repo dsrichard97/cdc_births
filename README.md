@@ -63,7 +63,7 @@
 <p align="center">
   <img src="picdataset.jpg" width="300" alt="Sublime's custom image"/>
 </p>
-
+</section>
 
 <section id="Entity_Relationship_Diagram">
   <h2>Entity Relationship Diagram</h2>
