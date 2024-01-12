@@ -61,6 +61,7 @@
     </table>
 
 <p align="center">
+  Below is an overview of all the tables stored within the database... 
   <img src="picdataset.png" width="300" alt="Sublime's custom image"/>
 </p>
 </section>
