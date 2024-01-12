@@ -59,11 +59,6 @@
             <td><a href="https://github.com/dsrichard97/cdc_births/blob/main/questions_and_answers.md">Q&A</a></td>
         </tr>
     </table>
-
-<p> Below is an overview of all the tables stored within the database...</p>
-<p> align="center"> 
-  <img src="picdataset.png" width="300" alt="Sublime's custom image"/>
-</p>
 </section>
 
 <section id="Entity_Relationship_Diagram">
