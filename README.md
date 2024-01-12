@@ -160,8 +160,8 @@ The heatmap reveals relationships between variables. Notably, there's a positive
   <p> 
     <li><a href="https://public.tableau.com/views/cdc_snapshot/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link">Tableau Dashboard</a></li>
     <li><a href="URL">High Level Overview by PowerPoint</a></li>
-    <li><a href="https://github.com/dsrichard97/cdc_births/blob/main/cdoverview.png">High Level Overview of Data</a></li>
-    <li><a href="https://github.com/dsrichard97/cdc_births/blob/main/Rcodeoverview.png">R code</a></li>
+    <li><a href="https://github.com/dsrichard97/cdc_births/blob/main/Rcodeoverview.png">High Level Overview of Data</a></li>
+    <li><a href="https://github.com/dsrichard97/cdc_births/blob/main/cdcsummary.pdf">R code</a></li>
     <li><a href="https://www.cdc.gov/datastatistics/index.html">CDC Information</a></li>
      <li><a href="https://github.com/dsrichard97/cdc_births/blob/main/updated_data.csv">Raw Data</a></li>
   </p>
