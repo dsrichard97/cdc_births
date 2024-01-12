@@ -60,9 +60,9 @@
         </tr>
     </table>
 
-  <p> Database with entire data tables... </p>
+  <p> Database with entire data tables... 
   ![alt text](picdataset.png)
-
+</p>
 
 
 <section id="Entity_Relationship_Diagram">
