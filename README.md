@@ -61,7 +61,7 @@
     </table>
 
 <p align="center">
-  <img src="picsdataset.jpg" width="300" alt="Sublime's custom image"/>
+  <img src="picdataset.png" width="300" alt="Sublime's custom image"/>
 </p>
 </section>
 
