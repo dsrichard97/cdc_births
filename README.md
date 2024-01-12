@@ -120,7 +120,7 @@ The heatmap reveals relationships between variables. Notably, there's a positive
 
 <br>
 <center>
-  Support Vector Machines (SVMs) are judged or evaluated based on several key criteria, which are crucial for assessing their performance in various machine learning tasks. Typically, the number and nature of the support vectors can provide insights into the model's complexity and generalization capability. Fewer support vectors often mean a simpler model, which might generalize better. As a result, the <b>radial kernel</b> function in SVM is most effective for modeling high-risk pregnancies due to its lower RMSE compared to other functions.
+  Support Vector Machines (SVMs) are judged or evaluated based on several key criteria, which are crucial for assessing their performance in various machine learning tasks. Typically, the number and nature of the support vectors can provide insights into the model's complexity and generalization capability. Fewer support vectors often mean a simpler model, which might generalize better. As a result, the <b>radial kernel</b> function in SVM is most effective for modeling high-risk pregnancies due to its lower RMSE compared to other functions. Check out <b>R code</b>: https://github.com/dsrichard97/cdc_births/blob/main/cdcsummary.pdf
 </center>
 <br>
 
