@@ -95,10 +95,8 @@ The heatmap reveals relationships between variables. Notably, there's a positive
 </ul>
 <br>
 
-<center>
-  <b>Accuracy</b> of Machine Learning Algorithms: Evaluating <b>Kernel Functions</b> in <b>Support Vector Machines</b>
-</center>
 
+<h3><b>Accuracy</b> of Machine Learning Algorithms: Evaluating <b>Kernel Functions</b> in <b>Support Vector Machines</b></h3>
   
 <center>
 <table>
