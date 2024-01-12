@@ -93,7 +93,8 @@ The heatmap reveals relationships between variables. Notably, there's a positive
 <li>-Average Age of Mother: 2290.50 - Strong Secondary Predictor</li>
 <li>-Average Pre-pregnancy BMI: 2243.89 - Significant Predictor</li>
 </ul>
-<br>
+
+<center>
 <br>
 <b> Accuracy </b> of Machine Learning Algorithms: Evaluating <b>Kernel Functions</b> in <b>Support Vector Machines</b>
 <table>
@@ -114,7 +115,7 @@ The heatmap reveals relationships between variables. Notably, there's a positive
             <td>16844.82</td>
         </tr>
     </table>
-
+<center>
 
 <br>
   <center>
