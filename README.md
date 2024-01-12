@@ -111,7 +111,9 @@ The heatmap reveals relationships between variables. Notably, there's a positive
             <td>16844.82</td>
         </tr>
     </table>
-    GPT
+
+
+  
 Support Vector Machines (SVMs) are judged or evaluated based on several key criteria, which are crucial for assessing their performance in various machine learning tasks. Typically, 
  The number and nature of the support vectors can provide insights into the model's complexity and generalization capability. Fewer support vectors often mean a simpler model, which might generalize better.
   As a result, the <b>radial kernel</b> function in SVM is most effective for modeling high-risk pregnancies due to its lower RMSE compared to other functions.
