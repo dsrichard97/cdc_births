@@ -59,8 +59,8 @@
             <td><a href="https://github.com/dsrichard97/cdc_births/blob/main/questions_and_answers.md">Q&A</a></td>
         </tr>
     </table>
-    
 
+  <p> Database with entire data tables... </p>
   ![alt text](picdataset.png)
 
 
