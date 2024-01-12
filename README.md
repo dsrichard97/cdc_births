@@ -88,13 +88,11 @@ Correlation Matrix
 The heatmap reveals relationships between variables. Notably, there's a positive correlation between maternal age and birth weight, suggesting that <b>older mothers often have babies with higher birth weights</b>.
 
 <b>Predictive Modeling Using Random Forest:</b>
-- Average Birth Weight (grams): 2429.82 - Most significant predictor.
-- Average Age of Mother: 2290.50 - Strong predictor, second to birth weight.
- -Average Pre-pregnancy BMI: 2243.89 - Another crucial predictor.
+<li>-Average Birth Weight in Grams: 2429.82 - Primary Predictor</li>
+<li>-Average Age of Mother: 2290.50 - Strong Secondary Predictor</li>
+<li>-Average Pre-pregnancy BMI: 2243.89 - Significant Predictor</li>
 
-Machine Learning Algorithm Accuracy:
-Analysis of Kernel Functions in SVM
-
+<b> Accuracy </b> of Machine Learning Algorithms: Evaluating <b>Kernel Functions</b> in <b>Support Vector Machines</b>
 <table>
         <tr>
             <th>Kernel Function</th>
@@ -113,7 +111,10 @@ Analysis of Kernel Functions in SVM
             <td>16844.82</td>
         </tr>
     </table>
-    This summary suggests the Radial kernel function in SVM is most effective for modeling high-risk pregnancies due to its lower RMSE compared to other functions.
+    GPT
+Support Vector Machines (SVMs) are judged or evaluated based on several key criteria, which are crucial for assessing their performance in various machine learning tasks. Typically, 
+ The number and nature of the support vectors can provide insights into the model's complexity and generalization capability. Fewer support vectors often mean a simpler model, which might generalize better.
+  As a result, the <b>radial kernel</b> function in SVM is most effective for modeling high-risk pregnancies due to its lower RMSE compared to other functions.
 
 <P>
   <section id="Limitations">
