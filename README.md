@@ -60,8 +60,8 @@
         </tr>
     </table>
 
-<p align="center">
-  Below is an overview of all the tables stored within the database... 
+ Below is an overview of all the tables stored within the database...
+<p align="center"> 
   <img src="picdataset.png" width="300" alt="Sublime's custom image"/>
 </p>
 </section>
