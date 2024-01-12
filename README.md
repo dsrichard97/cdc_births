@@ -37,7 +37,7 @@
 
 <section id="about-the-data">
   <h2>About The Data</h2>
-  <p>This dataset, sourced from the CDC's National Center for Health Statistics, provides detailed statistics on live births in the United States from 2016 to 2022, including demographic and health information derived from birth certificates. It covers a range of data such as mother's race, age, tobacco use, delivery methods, and congenital anomalies. The dataset ensures privacy by suppressing data representing 1-9 births and is a part of the National Vital Statistics System available on the CDC WONDER Online Database. For more information visit: https://wonder.cdc.gov/wonder/help/Natality-expanded.html</p>
+  <p>This dataset, sourced from the CDC's National Center for Health Statistics, provides detailed statistics on live births in the United States from 2016 to 2022, including demographic and health information derived from birth certificates. It covers a range of data such as mother's race, age, tobacco use, delivery methods, and congenital anomalies. The dataset ensures privacy by suppressing data representing 1-9 births and is a part of the National Vital Statistics System available on the <b>CDC WONDER Online Database</b>. For more information visit: https://wonder.cdc.gov/wonder/help/Natality-expanded.html</p>
 </section>
 
 <section id="SQL-Preliminaries">
@@ -64,7 +64,7 @@
 <section id="Entity_Relationship_Diagram">
   <h2>Entity Relationship Diagram</h2>
   <p>
-    The entity diagram shows the relationship of the inner join used to combine both the tables. Header in tables suggest the keys for each.
+    The entity diagram shows the relationship of the <b>inner join</b> used to combine both the tables. Header in tables suggest the keys for each.
     <img src="in1.png" width="900" alt="Sublime's custom image"/>
   </p>
 </section>
@@ -85,7 +85,7 @@ Correlation Matrix
 </p>
 
 <b>Initial Correlation Assessment:</b>
-The heatmap reveals relationships between variables. Notably, there's a positive correlation between maternal age and birth weight, suggesting that older mothers often have babies with higher birth weights.
+The heatmap reveals relationships between variables. Notably, there's a positive correlation between maternal age and birth weight, suggesting that <b>older mothers often have babies with higher birth weights</b>.
 
 <b>Predictive Modeling Using Random Forest:</b>
 - Average Birth Weight (grams): 2429.82 - Most significant predictor.
