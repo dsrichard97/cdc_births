@@ -1,5 +1,5 @@
 # Original dataset
-The datasets and entries orginal storage..... 
+The original storage locations of the datasets and entries...
 
 
 ### County natality
